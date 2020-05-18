@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:background="@color/category_numbers">
+
+        <TextView
+            android:id="@+id/sanView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:text="lutti"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/engView"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:text="one"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</LinearLayout>
